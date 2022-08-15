@@ -5,5 +5,13 @@ This is an HTML file and autostart script to launch Chromium to view that HTML i
 
 The HTML embeds a tab from a Google Sheets document that shows upcoming events.
 
----
-Written by *Jon Haines* (Spreadsheet) and *Andrew Kennedy* (HTML and Scripting) for C ARTS, August 2022.
+## TODO
+
+Better control over size of rendered web page
+
+## Credits
+
+Written for **C ARTS**, August 2022.
+
+- Jon Haines (_Spreadsheet_)
+- Andrew Kennedy (_Scripting_)
