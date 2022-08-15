@@ -13,5 +13,5 @@ unclutter -idle "0.1" -root
 
 # start browser in full screen kiosk mode
 CHROMIUM_OPTS="--noerrdialogs --disable-infobars --kiosk"
-chromium ${CHROMIUM_OPTS} file://${LOCATION}/events.html
-#chromium ${CHROMIUM_OPTS} http://cvenues.com/events/aquila.html
+/usr/bin/chromium-browser ${CHROMIUM_OPTS} file://${LOCATION}/events.html
+#/usr/bin/chromium-browser ${CHROMIUM_OPTS} http://cvenues.com/events/aquila.html
