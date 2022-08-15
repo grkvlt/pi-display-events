@@ -1,4 +1,5 @@
 #!/bin/bash
+#set -x # DEBUG
 
 # get script location
 LOCATION=$(dirname $0)
@@ -9,7 +10,7 @@ xset -dpms
 xset s noblank
 
 # turn off mouse pointer
-unclutter -idle "0.1" -root
+unclutter -idle "0.1" -root &
 
 # start browser in full screen kiosk mode
 CHROMIUM_OPTS="--noerrdialogs --disable-infobars --kiosk"
