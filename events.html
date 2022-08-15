@@ -2,33 +2,27 @@
     <head>
         <title>Events Screen</title>
         <style>
-#place { display: none; }
-#aquila { display: block; }
-#cubed { display: none; }
 iframe {
+    display: none;
     position: absolute;
     top: -30px;
     height: 100%;
     width: 100%;
     transform: translate(1000px, 500px) scale(2.0, 2.0);
 }
-body: { background: black; }
+/* change this value for each display */           
+#aquila { display: block; } 
         </style>
         <meta http-equiv="refresh" content="60">
     </head>
     <body>
         <div class="events">
-            <!-- place -->
-            <iframe id="place"
-                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnM9cqZzonTp7AWblKgkjzLHa8ozpjkHgAOA7F5yDgAvETrVh-LbnRaXxnnhzvR5mY4hmd-lN7DtOA/pubhtml?gid=1431981428&amp;single=true&amp;widget=false&amp;headers=false"></iframe>
-
-            <!-- aquila -->
             <iframe id="aquila"
                     src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnM9cqZzonTp7AWblKgkjzLHa8ozpjkHgAOA7F5yDgAvETrVh-LbnRaXxnnhzvR5mY4hmd-lN7DtOA/pubhtml?gid=1319359423&amp;single=true&amp;widget=false&amp;headers=false"></iframe>
-
-            <!-- cubed -->
             <iframe id="cubed"
-                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnM9cqZzonTp7AWblKgkjzLHa8ozpjkHgAOA7F5yDgAvETrVh-LbnRaXxnnhzvR5mY4hmd-lN7DtOA/pubhtml?gid=876687529&amp;single=true&amp;widget=false&amp;headers=false"></iframe>
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnM9cqZzonTp7AWblKgkjzLHa8ozpjkHgAOA7F5yDgAvETrVh-LbnRaXxnnhzvR5mY4hmd-lN7DtOA/pubhtml?gid=876687529&amp;single=true&amp;widget=false&amp;headers=false"></iframe> 
+            <iframe id="place"
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnM9cqZzonTp7AWblKgkjzLHa8ozpjkHgAOA7F5yDgAvETrVh-LbnRaXxnnhzvR5mY4hmd-lN7DtOA/pubhtml?gid=1431981428&amp;single=true&amp;widget=false&amp;headers=false"></iframe>
         </div>
     </body>
 </html>
