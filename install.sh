@@ -7,6 +7,7 @@ TARGET_USER="${2:-pi}"
 # copy install script
 mkdir -p ${TARGET_DIR}
 install -m 755 events.sh ${TARGET_DIR}
+install -m 644 events.html ${TARGET_DIR}
 
 ( apt-get update
   apt-get install unclutter
