@@ -13,4 +13,4 @@ unclutter -idle "0.1" -root
 
 # start browser in full screen kiosk mode
 chromium --kiosk file://${LOCATION}/events.html
-#chromium --kiosk http://cvenues.com/events/events.html?venue=place
+#chromium --kiosk http://cvenues.com/events/aquila.html
