@@ -34,7 +34,17 @@ TARGET_USER="${2:-pi}"
 # copy install script
 mkdir -p ${TARGET_DIR}
 install -m 755 events.sh ${TARGET_DIR}
-install -m 644 events.html ${TARGET_DIR}
+install -m 644 -o ${TARGET_USER} events.html ${TARGET_DIR}
+
+# set up web server
+HTML_DIR="/var/www/html"
+chown -R ${TARGET_USER} ${HTML_DIR}
+install -m 644 -o ${TARGET_USER} events.html ${HTML_DIR}
+
+# enable appache2 service
+(   systemctl enable apache2
+    systemctl start apache2
+) || error "Cannot enable apache2 web service"
 
 # add event displayer to autostart
 AUTOSTART="/home/${TARGET_USER}/.config/lxsession/LXDE-pi/autostart"
