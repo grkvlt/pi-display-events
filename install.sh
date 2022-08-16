@@ -31,10 +31,9 @@ TARGET_USER="${2:-pi}"
             apache2
 ) || error "Package installation failed"
 
-# copy install script
+# copy script
 mkdir -p ${TARGET_DIR}
 install -m 755 events.sh ${TARGET_DIR}
-install -m 644 -o ${TARGET_USER} events.html ${TARGET_DIR}
 
 # set up web server
 HTML_DIR="/var/www/html"

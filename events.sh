@@ -27,8 +27,8 @@
 # debugging
 #set -x
 
-# get script location
-LOCATION=$(dirname $0)
+# get HTML location
+HTML_DIR="/var/www/html"
 
 # turn off screen blanking
 xset s off
@@ -39,7 +39,8 @@ xset s noblank
 unclutter -idle "0.1" -root &
 
 # start browser in full screen kiosk mode
-CHROMIUM_OPTS="--noerrdialogs --disable-infobars --kiosk"
-chromium-browser ${CHROMIUM_OPTS} file://${LOCATION}/events.html
+#CHROMIUM_OPTS="--noerrdialogs --disable-infobars --kiosk"
+CHROMIUM_OPTS="--start-fullscreen"
+chromium-browser ${CHROMIUM_OPTS} file://${HTML_DIR}/events.html
 #chromium-browser ${CHROMIUM_OPTS} http://localhost/events.html
 #chromium-browser ${CHROMIUM_OPTS} http://cvenues.com/events/aquila.html
