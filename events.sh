@@ -40,7 +40,7 @@ unclutter -idle "0.1" -root &
 
 # start browser in full screen kiosk mode
 #CHROMIUM_OPTS="--noerrdialogs --disable-infobars --kiosk"
-CHROMIUM_OPTS="--start-fullscreen"
+CHROMIUM_OPTS="--start-fullscreen --force-device-scale-factor=0.7"
 chromium-browser ${CHROMIUM_OPTS} file://${HTML_DIR}/events.html
 #chromium-browser ${CHROMIUM_OPTS} http://localhost/events.html
 #chromium-browser ${CHROMIUM_OPTS} http://cvenues.com/events/aquila.html
