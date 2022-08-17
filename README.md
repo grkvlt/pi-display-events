@@ -4,6 +4,8 @@ PI DISPLAY EVENTS
 Raspberry PI code for displaying HTML file listing events on a
 monitor. The events are exported froma Google Sheets document.
 
+![events on screen](events.png)
+
 ### Version
 
 The latest development version is 0.1.1 and the latest release is
@@ -15,7 +17,8 @@ including bug reports and pull requests, at the project's GitHub page.
 
 ### TODO
 
-Better control over size of rendered web page.
+1. Automatic control over size of rendered page
+2. Better documentation
 
 ## Install
 
@@ -51,13 +54,22 @@ Configure the Raspberry PI as follows:
 The startup script in
 [`/events/events.sh`](https://github.com/grkvlt/pi-display-events/blob/main/events.sh#L41-L46)
 should be edited to define the `CHROMIUM_OPTS` values to use according to
-the scren size and resolution, and the specific `chromium-browser` line to
+the screen size and resolution, and the specific `chromium-browser` line to
 use should be uncommented.  Generally the `https://localhost/events.html`
 version is best.
 
 Edit the
 [`/var/www/html/events.html`](https://github.com/grkvlt/pi-display-events/blob/main/events.html#L36-L37)
-file to specify the id of the venue.
+file to specify the id of the venue. This file can also be modified to
+define the URLS fetched for each venue. Additionally, the alignment and
+size of the events display should be altered here to better match the
+screen size and resolution being used. The CSS on [line
+32](https://github.com/grkvlt/pi-display-events/blob/main/events.htmlh#L32)
+specifies this:
+
+```css
+transform: translate(1000px, 500px) scale(2.0, 2.0);
+```
 
 ## Usage
 
@@ -72,6 +84,7 @@ $ /events/events.sh
 
 The spreadsheet code that produces the HTML for displaying events was
 provided by Jon Haines.
+
 ---
 _Copyright 2022 by [Andrew Donald Kennedy](mailto:andrew.international@gmail.com)_ and
 _Licensed under the [Apache Software License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)_
