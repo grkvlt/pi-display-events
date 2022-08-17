@@ -2,7 +2,7 @@
 #
 # PI DISPLAY EVENTS INSTALL
 #
-# Version 0.1.1
+# Version 0.1.2
 #
 # Usage:
 #   install.sh [ target-directory [ target-user ] ]

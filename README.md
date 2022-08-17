@@ -10,8 +10,8 @@ the web using the _Share_ menu.
 
 ### Version
 
-The latest development version is 0.1.1 and the latest release is
-[0.1.0](https://github.com/grkvlt/pi-display-events/releases/tag/version-0.1.0).
+The latest development version is 0.1.2 and the latest release is
+[0.1.1](https://github.com/grkvlt/pi-display-events/releases/tag/version-0.1.1).
 
 This software is provided as Open Source using the Apache 2.0 license and
 is currently maintained by Andrew Kennedy.  All contributions are welcome,
@@ -35,10 +35,10 @@ The installation process is as follows:
 ```shell
 $ wget https://github.com/grkvlt/pi-display-events/archive/refs/tags/version-0.1.0.tar.gz
 ...
-$ tar zxvf version-0.1.0.tar.gz
-pi-display-events-version-0.1.0/
+$ tar zxvf version-0.1.1.tar.gz
+pi-display-events-version-0.1.1/
 ...
-$ cd pi-display-events-version-0.1.0
+$ cd pi-display-events-version-0.1.1
 $ sudo ./install.sh /opt/display
 ...
 ```

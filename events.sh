@@ -5,7 +5,7 @@
 # Raspberry PI code for displaying HTML file listing events on a
 # monitor. The events are exported froma Google Sheets document.
 #
-# Version 0.1.1
+# Version 0.1.2
 #
 # Usage:
 #   events.sh
