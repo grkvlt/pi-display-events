@@ -37,7 +37,7 @@ $ tar zxvf version-0.1.0.tar.gz
 pi-display-events-version-0.1.0/
 ...
 $ cd pi-display-events-version-0.1.0
-$ sudo ./install.sh
+$ sudo ./install.sh /opt/display
 ...
 ```
 
@@ -73,11 +73,11 @@ transform: translate(1000px, 500px) scale(2.0, 2.0);
 
 ## Usage
 
-The browser should start automatically on boot. Otherwise run the script
-from a terminal.
+The browser should start automatically on boot. Otherwise run the
+`events.sh` script from a terminal.
 
 ```shell
-$ /events/events.sh
+$ /opt/display/events.sh
 ```
 
 ## Credits
