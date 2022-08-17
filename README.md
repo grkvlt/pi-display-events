@@ -1,8 +1,10 @@
 PI DISPLAY EVENTS
 =================
 
-Raspberry PI code for displaying HTML file listing events on a
-monitor. The events are exported froma Google Sheets document.
+Raspberry PI code for displaying HTML file listing events on a monitor. The
+events are exported from a [Google
+Sheets](https://docs.google.com/spreadsheets/u/0/) document published to
+the web using the _Share_ menu.
 
 ![events on screen](events.png)
 
